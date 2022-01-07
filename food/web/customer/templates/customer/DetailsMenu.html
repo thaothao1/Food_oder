@@ -1,0 +1,386 @@
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{% static '/css/bootstrapa.css' %}" type="text/css" rel="stylesheet" media="all">
+<link href="{% static '/css/stylea.css' %}" type="text/css" rel="stylesheet" media="all">   
+<link href="{% static '/css/font-awesomea.css' %}" rel="stylesheet"> <!-- font-awesome icons -->
+<link rel="stylesheet" href="{% static '/css/owl.carouselaa.css' %}" type="text/css" media="all"/> <!-- Owl-Carousel-CSS -->
+<link href="{% static '/css/wickedpickera.css' %}" rel="stylesheet" type='text/css' media="all" />  <!-- time-picker-CSS -->
+<!-- //Custom Theme files --> 
+<!-- js -->
+<script src="{% static '/js/jquery-2.2.3.min.js' %}"></script>  
+<!-- //js -->
+<!-- web-fonts --> 
+<link rel="stylesheet" href="{% static '/css/style-starter.css' %}">
+<link rel="stylesheet" href="{% static '/css/style-starter.css' %}">  
+<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+<body> 
+	<!-- banner -->
+	<div class="banner jarallax">
+		<!-- header -->
+			<header id="site-header" class="fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark stroke">
+				<a class="navbar-brand" href="">
+				</a>
+				<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+					<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+						</li>
+					
+						<li class="nav-item @@about__active">
+							<a class="nav-link" href="{% url 'home' %}">Oder</a> 
+                             
+            </li>
+    		<li class="nav-item @@services__active">
+							<a class="nav-link" href="{% url 'Menu' %}" >Menu</a>
+  
+						</li>
+						<li class="nav-item @@contact__active">
+							<a class="nav-link" href="contact.html">Món ăn</a>
+              <ul class="sub-menu">
+             
+                <li><a href="/menu3?id=<?=$row[0]?>"></a></li>
+               
+              </ul>
+						</li>
+            <li class="nav-item @@contact__active">
+              <ul>
+                  <li class="nav-link"><a href="/">Đăng xuất</a></li>
+              </ul>
+          </li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	  </header>
+		<!-- //header --> 
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="container"> 
+				<div class="banner-w3lstext"> 
+					<h2>Hôm nay ăn gì ??</h2>
+				
+				</div> 
+			</div>
+		</div>
+		<!-- //banner-text -->
+	</div>
+	<!-- //banner --> 
+	<!-- welcome --> 
+	<div class="welcome">
+		<div class="container"> 
+			<div class="col-md-7 welcome-grid-left">
+		
+			
+					</form>
+				</div>
+				<!-- Time select -->
+				<script type="text/javascript" src="{% static '/js/wickedpicker.js' %}"></script>
+				<script type="text/javascript">
+					$('.timepicker').wickedpicker({twentyFour: false});
+				</script>
+				<!-- //Time select -->
+				<!-- Calendar -->
+				<link rel="stylesheet" href="{% static '/css/jquery-uia.css'%}" />
+				<script src="{% static '/js/jquery-ui.js'%}"></script>
+				  <script>
+						  $(function() {
+							$( "#datepicker" ).datepicker();
+						  });
+				  </script>
+				<!-- //Calendar --> 
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //welcome -->  
+	<!-- wthree-slid -->
+	<div style= " font-size : 200px ; margin-left:350px ; color : blue"> 
+					<h1>{{ menu.name}}</h1>
+				
+				</div> 
+			
+	<div class="wthree-slid" style= " margin-top :100px"> 
+		<div class="col-sm-6 col-xs-8 wthree-slid-right"> 
+			
+			<h5><b>Monday – Saturday :</b> 8:00 a.m – 11:00 p.m <br>
+				<b>Sunday : </b> 10 a.m – 12 p.m <br>
+				<span class="glyphicon glyphicon-earphone"></span> +11 999 8888 7777 
+			</h5>
+			<!-- Stats --> 
+			<div class="stats-info agileits-w3layouts">
+				<h4>Nguyên liệu </h4>
+				<h3>{{ menu.nguyenlieu }}</h3>
+				<div class="col-sm-4 col-xs-4 stats-grid">  
+					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='57000' data-delay='.5' data-increment="5">57000</div>
+					<h6>Happy Clients</h6>
+				</div> 
+				<div class="col-sm-4 col-xs-4 stats-grid"> 
+					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='8000' data-delay='.5' data-increment="5">8000</div>
+					<h6>Projects </h6> 
+				</div>
+				<div class="col-sm-4 col-xs-4 stats-grid">  
+					<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='225' data-delay='8' data-increment="1">225</div>
+					<h6>Awards</h6>
+				</div>
+			
+				<div class="clearfix"></div>
+			</div>  
+			<!-- //Stats -->  
+		</div>
+		
+		<div class="col-sm-6 col-xs-4 wthree-slid-left"> 
+			<video width="530" height="400px" controls>
+				<source src="{{ menu.video.url }}" type="video/mp4"></source>
+			</video>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- wthree-slid --> 
+	<!-- about -->
+	<div class="about">
+		<div class="container"> 
+			<div class="w3ls-title"> 
+				<h3 class="agileits-title">Sơ chế</h3>
+			</div>
+			<h4 class="about-w3text" style ="color:black">{{ menu.soche }}</h4>
+			<div class="w3ls-title"> 
+				<h3 class="agileits-title">Cách dùng</h3>
+			</div>
+			<h4 class="about-w3text" style ="color:black">{{ menu.cachdung }}</h4>
+			<div class="w3ls-title"> 
+				<h3 class="agileits-title">Mạch nhỏ</h3>
+			</div>
+			<h4 class="about-w3text" style ="color:black">{{ menu.machnho }}</h4>
+			<div class="services-row-agileinfo">
+				<div class="col-sm-4 col-xs-4 services-w3grid">
+					<span class="glyphicon glyphicon-heart hi-icon" aria-hidden="true"></span>
+					<h5>Cum soluta nobis</h5>
+					<p>Itaque earum rerum hic a sapiente delectus finibus gravida</p>
+				</div>
+				<div class="col-sm-4 col-xs-4 services-w3grid">
+					<span class="glyphicon glyphicon-list-alt hi-icon" aria-hidden="true"></span>
+					<h5>Soluta vum nobis</h5>
+					<p>Itaque earum rerum hic a sapiente delectus finibus gravida</p>
+				</div>
+				<div class="col-sm-4 col-xs-4 services-w3grid">
+					<span class="glyphicon glyphicon-leaf hi-icon" aria-hidden="true"></span>
+					<h5>Nobis cum soluta</h5>
+					<p>Itaque earum rerum hic a sapiente delectus finibus gravida</p>
+				</div> 
+				<div class="clearfix"> </div>
+			</div> 
+		 </div>
+	</div>
+	<!-- //about -->
+	<!-- specials -->
+	<div class="specials">  
+		<!-- Owl-Carousel -->
+		<div id="owl-demo" class="owl-carousel text-center">
+			<div class="item g1 popup-with-zoom-anim">
+				<img class="lazyOwl" src="{% static '/images' %}\<?php echo $row['8']?>" alt="Veg Mores">
+				<div class="agile-caption">
+					<h4>Our Specials</h4>
+					<span>Neque porro quisquam est qui dolorem </span>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim">
+				<img class="lazyOwl" src="{% static '/images/g2.jpg'%}" alt="Veg Mores">
+				<div class="agile-caption">
+					<h4>Our Specials</h4>
+					<span>Neque porro quisquam est qui dolorem </span>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim">
+				<img class="lazyOwl" src="{% static '/images/g3.jpg'%}" alt="Veg Mores">
+				<div class="agile-caption">
+					<h4>Our Specials</h4>
+					<span>Neque porro quisquam est qui dolorem </span>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim">
+				<img class="lazyOwl" src="{% static '/images/g4.jpg' %}" alt="Veg Mores">
+				<div class="agile-caption">
+					<h4>Our Specials</h4>
+					<span>Neque porro quisquam est qui dolorem </span>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim">
+				<img class="lazyOwl" src="{% static '/images/g1.jpg'%}" alt="Veg Mores">
+				<div class="agile-caption">
+					<h4>Our Specials</h4>
+					<span>Neque porro quisquam est qui dolorem </span>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim">
+				<img class="lazyOwl" src="{% static '/images/g2.jpg'%}" alt="Veg Mores">
+				<div class="agile-caption">
+					<h4>Our Specials</h4>
+					<span>Neque porro quisquam est qui dolorem </span>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim">
+				<img class="lazyOwl" src="{% static '/images/g3.jpg'%}" alt="Veg Mores">
+				<div class="agile-caption">
+					<h4>Our Specials</h4>
+					<span>Neque porro quisquam est qui dolorem </span>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim">
+				<img class="lazyOwl" src="{% static '/images/g4.jpg'%}" alt="Veg Mores">
+				<div class="agile-caption">
+					<h4>Our Specials</h4>
+					<span>Neque porro quisquam est qui dolorem </span>
+				</div>
+			</div> 
+		</div>
+		<!-- //Owl-Carousel -->  
+	</div>
+	<!-- //specials --> 
+
+	<!-- footer -->
+	
+              
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-5 col-sm-5 agileinfo_footer_grid">
+				<h3 class="agileits-title">Cách nấu</h3>
+				
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+					fugiat nulla pariatur. <span>Excepteur sint occaecat cupidatat non proident 
+					sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+			</div>
+			<div class="col-md-3 col-sm-3 agileinfo_footer_grid mid-w3l nav2">
+				<h3 class="agileits-title">Popular</h3>
+				<ul>
+					<li><a href="#myModal" data-toggle="modal"><i class="fa fa-arrow-right"></i> Proin placerat</a></li>
+					<li><a href="#myModal" data-toggle="modal"><i class="fa fa-arrow-right"></i> Ipsum et rutrum</a></li>
+					<li><a href="#myModal" data-toggle="modal"><i class="fa fa-arrow-right"></i> Proin semper utr</a></li>
+					<li><a href="#myModal" data-toggle="modal"><i class="fa fa-arrow-right"></i> Ligula sit amet</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-4 agileinfo_footer_grid">
+				<h3 class="agileits-title">Address</h3>
+				<ul>
+					<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 738 Diamond Road, New York City</li>
+					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
+					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (0123) 0111 111 222</li>
+				</ul>
+			</div> 
+			<div class="clearfix"> </div>
+			<div class="w3agile_footer_copy">
+				<p>© 2017 Dine. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts.</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<!-- modal-about -->
+	<div class="modal bnr-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div> 
+				<div class="modal-body modal-spa">
+					<img src="{% static '/images/g2.jpg' %}" class="img-responsive" alt=""/>
+					<div class="modal-w3lstext">
+						<h4>Blanditiis deleniti</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at. Donec fringilla lacus eu pretium rutrum. Cras aliquet congue ullamcorper. Etiam mattis eros eu ullamcorper volutpat. Proin ut dui a urna efficitur varius. uisque molestie cursus mi et congue consectetur adipiscing elit cras rutrum iaculis enim, Lorem ipsum dolor sit amet, non convallis felis mattis at. Maecenas sodales tortor ac ligula ultrices dictum et quis urna. Etiam pulvinar metus neque, eget porttitor massa vulputate in. Fusce lacus purus, pulvinar ut lacinia id, sagittis eumi.</p>
+					</div> 
+				</div> 
+			</div>
+		</div>
+	</div>
+	<!-- //modal-about -->   
+	<!-- Owl-Carousel-JavaScript -->
+	<script src="{% static '/js/owl.carousel.js'%}"></script>
+	<script>
+		$(document).ready(function() {
+			$("#owl-demo").owlCarousel ({
+				items : 3,
+				lazyLoad : true,
+				autoPlay : true,
+				pagination : false,
+			});
+		});
+	</script>
+	<!-- //Owl-Carousel-JavaScript --> 
+	<!-- menu-js -->
+	<script>
+		$('.navicon').on('click', function (e) {
+		  e.preventDefault();
+		  $(this).toggleClass('navicon--active');
+		  $('.toggle').toggleClass('toggle--active');
+		});
+	</script> 
+	<!-- //menu-js -->
+	<!-- Progressive-Effects-Animation-JavaScript -->  
+	<script type="text/javascript" src="{% static '/js/numscroller-1.0.js'%}"></script>
+	<!-- //Progressive-Effects-Animation-JavaScript --> 
+	<!-- jarallax -->  
+	<script src="{% static '/js/SmoothScroll.min.js' %}"></script> 
+	<script src="{% static '/js/jarallax.js' %}"></script> 
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>  
+	<!-- //jarallax --> 
+	<!-- start-smooth-scrolling --> 
+	<script type="text/javascript" src="{% static '/js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static '/js/easing.js' %}"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	 
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->  
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static '/js/bootstrap.js' %}"></script>
+</body>
+</html>
+{% endblock content %}

@@ -1,0 +1,235 @@
+
+  
+{% extends 'customer/base.html' %}
+{% load static %}
+{% block content %}
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link rel="stylesheet" href="{% static '/css/style-starter.css' %}"> <!-- Font-Awesome-Icons-CSS -->
+<link rel="stylesheet" href="{% static  '/css/style1.css' %}" type="text/css" media="all" /> <!-- Style-CSS --> 
+<!-- //css files -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<section class=" w3l-header-4 header-sticky">
+	<!--header-->
+	<header id="site-header" class="fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark stroke">
+				<a class="navbar-brand" href="">
+				</a>
+				<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+					<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+						</li>
+					
+						<li class="nav-item @@about__active">
+							<a class="nav-link" href="{% url 'Home' %}">Oder</a> 
+                             
+            </li>
+    		<li class="nav-item @@services__active">
+							<a class="nav-link" >Cách nấu</a>
+              <ul class="sub-menu">  
+                <li><a href=""></a></li>
+                
+              </ul>
+						</li>
+						<li class="nav-item @@contact__active">
+							<a class="nav-link" href="contact.html">Món ăn</a>
+              <ul class="sub-menu">
+             
+                <li><a href="/menu3?id=<?=$row[0]?>"></a></li>
+               
+              </ul>
+						</li>
+            <li class="nav-item @@contact__active">
+              <ul>
+                  <li class="nav-link"><a href="/">Đăng xuất</a></li>
+              </ul>
+          </li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	  </header>
+</section>
+<section >
+<div >
+    <h1 style:"margin-top : 100px">Menu </h1>
+    </div>
+<div class="container mb-5">
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-12 col-sm-12 p-4">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="pt-5">
+                    {% for seafood in seafood %}
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ seafood.image.url }}" width="150" height="100"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ seafood.pk }}">
+                                    <label class="form-check-label" style = "margin-left : 20px">{{ seafood.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5">{{ seafood.price }}</p>
+                            </div>
+                            <p>{{ seafood.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                {% endfor %}
+                </div>
+
+                <div class="pt-5">
+                    {% for beef in beef %}
+                    <div class="row mt-4">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ beef.image.url }}" width="150" height="100"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ beef.pk }}">
+                                    <label class="form-check-label" style = "margin-left : 20px">{{ beef.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5">{{ beef.price }}</p>
+                            </div>
+                            <p>{{ beef.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    {% endfor %}
+                </div>
+
+                <div class="pt-5">
+                    {% for vegetable in vegetable %}
+                    <div class="row mt-4">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ vegetable.image.url }}" width="150" height="100"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ vegetable.pk }}">
+                                    <label class="form-check-label" style = "margin-left : 20px">{{ vegetable.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5">{{ vegetable.price }}</p>
+                            </div>
+                            <p>{{ vegetable.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    {% endfor %}
+                </div>
+
+                <div class="pt-5">
+                    {% for pork in pork %}
+                    <div class="row mt-4">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ pork.image.url }}" width="150" height="100"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ pork.pk }}">
+                                    <label class="form-check-label" style = "margin-left : 20px">{{ pork.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5">{{ pork.price }}</p>
+                            </div>
+                            <p>{{ pork.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    {% endfor %}
+                </div>
+                    <div class="pt-5">
+                    {% for chicken in chicken %}
+                    <div class="row mt-4">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ chicken.image.url }}" width="150" height="100"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ chicken.pk }}">
+                                    <label class="form-check-label" style = "margin-left : 20px">{{ chicken.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5">{{ chicken.price }}</p>
+                            </div>
+                            <p>{{ chicken.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    {% endfor %}
+                </div>
+                <div class= "form-group pt-3">
+                    <lable for= "name">Full name</label>
+                    <input required class= "form-control" type= "text" placeholder= "Your Name" namme= "name"/>
+                </div> 
+                   <div class= "form-group pt-3">
+                    <lable for= "name">Email Address</label>
+                    <input required class= "form-control" type= "text" placeholder= "example@gmail.com" namme= "email"/>
+                </div> 
+                   <div class= "form-group pt-3">
+                    <lable for= "name">Street Address</label>
+                    <input required class= "form-control" type= "text" placeholder= "1234 Main St" namme= "street"/>
+                </div> 
+                           <div class = "col-md-4 col-sm-12">
+                                <div class= "form-group pt-3">
+                                     <lable for= "name">city</label>
+                                    <input required class= "form-control" type= "text" placeholder= "CA" namme= "city"/>
+                            </div> 
+                            </div>
+
+                        <div class = "col-md-4 col-sm-12">
+                                <div class= "form-group pt-3">
+                                     <lable for= "name">State</label>
+                                    <input required class= "form-control" type= "text" placeholder= "CA" namme= "state"/>
+                            </div> 
+                            </div>
+
+                     
+                        <div class = "col-md-4 col-sm-12">
+                                 <div class= "form-group pt-3">
+                                        <lable for= "name">Zip Code</label>
+                                         <input required class= "form-control" type= "text" placeholder= "736492" namme= "zip"/>
+                                 </div> 
+                        </div>
+                        </div>
+                                <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
+                                                    submit oder!
+                                        </button>
+
+                                                    <!-- Modal -->
+                                <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                    <div class="modal-header">
+                                                            <h5 class="modal-title" id="submitModalLabel">Submit Your Order!</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary">Go Back</button>
+                                                            <button type="submit" class="btn btn-primary">Place Order</button>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,835 @@
+{% block content %}
+{% load static %}
+<DOCTYPE html>
+<html lang="en">
+<head>
+<title>Glorious a Restaurants Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Glorious Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--// Meta tag Keywords -->
+<!-- css files -->
+<link href="{% static '/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" /> <!-- Bootstrap-Core-CSS -->
+<link href="{% static '/css/style.css' %}" rel="stylesheet" type="text/css" media="all" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="{% static '/css/font-awesome.css' %}"> <!-- Font-Awesome-Icons-CSS -->
+<link rel="stylesheet" href="{% static '/css/flexslider.css' %}" type="text/css" media="screen" property="" /> <!-- Flexslider-CSS -->
+<link rel="stylesheet" href="{% static '/css/team.css' %}" type="text/css" media="screen" property="" /> <!-- Team-CSS -->
+<link rel="stylesheet" href="{% static '/css/smoothbox.css' %}" type='text/css' media="all" /> <!-- Smoothbox-CSS -->
+<link href="{% static '/css/wickedpicker.css' %}" rel="stylesheet" type='text/css' media="all" /> <!-- Time-script-CSS -->
+<!-- //css files -->
+<!-- online-fonts -->
+<link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Oleo+Script:400,700&amp;subset=latin-ext" rel="stylesheet">
+<!-- //online-fonts -->
+</head>
+<body>
+<!-- banner -->
+<div data-vide-bg="{% static '/video/food' %}">
+	<div class="center-container">
+		<div class="banner wthree">
+			<div class="container">
+				<div class="banner_top">
+					<div class="col-md-6 col-sm-4 col-xs-4 logo" style= " margin-top : 80px">
+						<h1><a href="index.html">Hôm nay ăn gì ??</a></h1>
+					</div>
+					<div class="col-md-6 col-sm-8 col-xs-8 w3_menu">
+						<div class="col-md-6 col-sm-5 col-xs-5 top-nav-text">
+							<a class="page-scroll" href="{% url 'login' %}" data-toggle="modal" data-hover="LOGIN">Đăng nhập</a>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-4 top-nav-text">
+							<a class="page-scroll" href="{% url 'register' %}" data-toggle="modal" data-hover="LOGIN">Đăng kí</a>
+						</div>
+						<div class="mobile-nav-button">
+							<div class="mobile-nav-button__line"></div>
+							<div class="mobile-nav-button__line"></div>
+							<div class="mobile-nav-button__line"></div>
+						</div>
+						<nav class="mobile-menu">
+							<ul>
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="#services" class="scroll">Services</a></li>
+								<li><a href="#chefs" class="scroll">Our Chefs</a></li>
+								<li><a href="#menu" class="scroll">Menu</a></li>
+								<li><a href="#gallery" class="scroll">Gallery</a></li>
+								<li><a href="#contact" class="scroll">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!--Slider-->	
+				<div class="col-md-7 callbacks_container">
+					<ul class="rslides" id="">
+						<li>
+							<div class="slider-info">
+								 
+
+							</div>
+						</li>
+						<li>
+						
+						</li>
+						<li>
+							<div class="slider-info">
+								 
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //Slider -->
+				<!-- form -->
+				<div class="">
+
+					   <form action="#" method="post">
+						
+						</form>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- //form -->
+			</div>
+		</div>
+		<!-- modal -->
+		<div class="modal about-modal w3-agileits fade" id="myModal2" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+					</div> 
+					<div class="modal-body login-page "><!-- login-page -->     
+						<div class="login-top sign-top">
+							<div class="agileits-login">
+							<h5>Login Here</h5>
+							<form action="#" method="post">
+								<input type="email" class="email" name="Email" placeholder="Email" required=""/>
+								<input type="password" class="password" name="Password" placeholder="Password" required=""/>
+								<div class="wthree-text"> 
+									<ul> 
+										<li>
+											<label class="anim">
+												<input type="checkbox" class="checkbox">
+												<span> Remember me ?</span> 
+											</label> 
+										</li>
+									</ul>
+									<div class="clearfix"> </div>
+								</div>  
+								<div class="w3ls-submit"> 
+									<input type="submit" value="LOGIN">  	
+								</div>	
+							</form>
+
+							</div>  
+						</div>
+					</div>  
+				</div> <!-- //login-page -->
+			</div>
+		</div>
+		<!-- //modal --> 
+		<!-- modal -->
+		<div class="modal about-modal w3-agileits fade" id="myModal3" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+					</div> 
+					<div class="modal-body login-page "><!-- login-page -->     
+						<div class="login-top sign-top">
+							<div class="agileits-login">
+							<h5>Register Here</h5>
+							<form action="#" method="post">
+								<input type="text" name="Username" placeholder="Username" required=""/>
+								<input type="email"  name="Email" placeholder="Email" required=""/>
+								<input type="password" name="Password" placeholder="Password" required=""/>
+								<input type="text" name="password" placeholder="Confirm Password" required="">
+								<div class="wthree-text"> 
+									<ul> 
+										<li>
+											<label class="anim">
+												<input type="checkbox" class="checkbox">
+												<span> I accept the terms of use</span> 
+											</label> 
+										</li>
+									</ul>
+									<div class="clearfix"> </div>
+								</div>  
+								<div class="w3ls-submit"> 
+									<input type="submit" value="Register">  	
+								</div>	
+							</form>
+							</div>  
+						</div>
+					</div>  
+				</div> <!-- //login-page -->
+			</div>
+		</div>
+		<!-- //modal --> 
+	</div>
+</div>
+<!-- //banner -->
+<!-- grids -->
+<div class="about-agile">
+	<div class="col-md-6 about-grids-w3l">
+		<div class="about-first-w3">
+			<div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+				<img src="{% static '/images/11.jpg' %}" class="img-responsive zoom-img" alt=""/>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+				<img src="{% static '/images/13.jpg' %}" class="img-responsive zoom-img" alt=""/>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+				<img src="{% static '/images/12.jpg' %}" class="img-responsive zoom-img" alt=""/>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="about-first-w3">
+			<div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+				<img src="{% static '/images/1.jpg' %}" class="img-responsive zoom-img" alt=""/>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+				<img src="{% static '/images/2.jpg' %}" class="img-responsive zoom-img" alt=""/>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+				<img src="{% static '/images/14.jpg' %}" class="img-responsive zoom-img" alt=""/>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="col-md-6 w3layouts_event_right">
+		<h3>Hôm nay ăn gì ?? </h3>
+		<div class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<div class="w3_event_right_grid">
+							<div class="w3layouts_event_right_para">
+								<h4>Những câu hỏi hằng ngày mà chắc chắn các chị em trong gia đình điều suy nghĩ.</h4>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3_event_right_grid">
+							<div class="w3layouts_event_right_para">
+								<h4>Đừng lo hôm nay ăn gì sẽ giúp bạn trả lời những câu hỏi này.</h4>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="w3_event_right_grid">
+							<div class="w3layouts_event_right_para">
+								<h4>Sẽ gợi ý những món ăn ngon trong gia đình.Hướng dẫn chi tiết nấu và món ăn.</h4>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+<!-- //grids -->
+<!-- services -->
+<div class="services" id="services">
+	<div class="container">
+		<div class="agile-heading">
+			<h3 class="w3l-title">Thực đơn</h3>
+		</div>
+		<div class="wthree-services-grids">
+			<div class="col-sm-3 wthree-services">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-info">
+						<img  src=" {%  static '/images/thao.jpg' %}">
+						<h4>gia đình</h4>
+				
+						<div class="w3ls-border"> </div>
+					</div>
+					<div class="wthree-services-captn">
+						<h4>food family</h4>
+						<p>những món ăn hàng ngày trong gia đình</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 wthree-services">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-info">
+						<img  src=" {%  static ' /images/thao1.jpg' %}">
+						<h4>trend</h4>
+						<div class="w3ls-border"> </div>
+					</div>
+					<div class="wthree-services-captn">
+						<h4>food trend</h4>
+						<p>Những món ăn hot trend hiện nay.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 wthree-services">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-info">
+						<img  src=" {%  static '/images/thao2.jpg' %}">
+						<h4>party</h4>
+						<div class="w3ls-border"> </div>
+					</div>
+					<div class="wthree-services-captn">
+						<h4>food party</h4>
+						<p>Những món ăn dã ngoại hay những buổi tiệc </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 wthree-services">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-info">
+						<img  src=" {%  static '/images/thao3.jpg' %}">
+						<h4>giỗ chạp</h4>
+						<div class="w3ls-border"> </div>
+					</div>
+					<div class="wthree-services-captn">
+						<h4>death anniversary</h4>
+						<p>những món ăn giỗ chạp lớn nhỏ trong gia đình như</p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="wthree-services-grids services-grids1">
+			<div class="col-sm-3 wthree-services">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-info">
+						<img  src=" {%  static '/images/thao4.jpg' %}">
+						<h4>bánh kem</h4>
+						<div class="w3ls-border"> </div>
+					</div>
+					<div class="wthree-services-captn">
+						<h4>cake</h4>
+						<p>những loại bánh kem trong ngày sinh nhật hay các loại bánh ăn nhẹ</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 wthree-services">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-info">
+						<img  src=" {%  static '/images/thao5.jpg' %}">
+						<h4>loại nước</h4>
+						<div class="w3ls-border"> </div>
+					</div>
+					<div class="wthree-services-captn">
+						<h4>dink</h4>
+						<p>những món nước ngon bổ dưỡng dễ dàng làm tại nhà</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 wthree-services">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-info">
+						<img  src=" {%  static  '/images/thao7.jpg' %}">
+						<h4>Đặc sản vùng miền</h4>
+						<div class="w3ls-border"> </div>
+					</div>
+					<div class="wthree-services-captn">
+						<h4>Đặc sản vùng miền</h4>
+						<p>Những món ăn đặ sản vùng miền : bắc trung nam nổi tiếng</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 wthree-services">
+				<div class="wthree-services-grid">
+					<div class="wthree-services-info">
+						<img  src=" {%  static 'images/thao6.jpg' %}">
+						<h4>món tây</h4>
+						<div class="w3ls-border"> </div>
+					</div>
+					<div class="wthree-services-captn">
+						<h4>món tây</h4>
+						<p>Những món của nước phương tây</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- //services -->
+<!-- team -->
+<div class="team" id="chefs">
+	<div class="container">
+		<div class="agile-heading team-heading">
+			<h3 class="w3l-title">Bếp trưởng</h3>
+		</div>
+		<div class="agile-team-grids">
+			<div class="col-sm-3 team-grid">
+				<div class="flip-container">
+					<div class="flipper">
+						<div class="front">
+							<img src=" {%  static ' /images/bep1.jpg' %}" alt="" />
+						</div>
+						<div class="back">
+							<h4>Phan Tôn Tịnh Hải</h4>
+							<p>Bếp trưởng</p>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 team-grid">
+				<div class="flip-container">
+					<div class="flipper">
+						<div class="front">
+							<img src=" {%  static ' /images/bep2.jpg' %}" alt="" />
+						</div>
+						<div class="back">
+							<h4>Dương Huy Khải</h4>
+							<p>Bếp trưởng</p>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 team-grid">
+				<div class="flip-container">
+					<div class="flipper">
+						<div class="front">
+							<img src=" {%  static  ' /images/bep3.jpg' %}" alt="" />
+						</div>
+						<div class="back">
+							<h4>Nguyễn Doãn Cẩm Vân</h4>
+							<p>Nulla molestie</p>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 team-grid">
+				<div class="flip-container">
+					<div class="flipper">
+						<div class="front">
+							<img src=" {%  static  ' /images/bep4.jpg' %}" alt="" />
+						</div>
+						<div class="back">
+							<h4>Luke Nguyễn</h4>
+							<p>bếp trưởng</p>
+							<div class="w3l-social">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //team -->
+<!-- menu-section -->
+<div class="menu-w3l" id="menu">
+	<h3 class="w3l-title">Menu</h3>
+	<ul id="flexiselDemo1">	
+		<li>
+			<div class="w3layouts_banner_bottom_left">
+				<img src=" {%  static ' /images/r1.jpg' %}" alt=" " class="img-responsive" />
+				<h4>rau muống</h4>
+			</div>
+		</li>
+		<li>
+			<div class="w3layouts_banner_bottom_left">
+				<img src=" {%  static ' /images/10.jpg' %}" alt=" " class="img-responsive" />
+				<h4>rau tôm</h4>
+			</div>
+		</li>
+		<li>
+			<div class="w3layouts_banner_bottom_left">
+				<img src=" {%  static ' /images/b1.jpg' %}" alt=" " class="img-responsive" />
+				<h4>bún thịt.</h4>
+			</div>
+		</li>
+		<li>
+			<div class="w3layouts_banner_bottom_left">
+				<img src=" {%  static ' /images/14.jpg' %}" alt=" " class="img-responsive" />
+				<h4>thịt kho tàu.</h4>
+			</div>
+		</li>
+		<li>
+			<div class="w3layouts_banner_bottom_left">
+				<img src=" {%  static ' /images/c1.jpg' %}" alt=" " class="img-responsive" />
+				<h4>Cá chiện riêu hồng.</h4>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- //menu-section -->
+<!-- cuisine-names -->
+
+<!-- //cuisine-names -->
+<!-- testimonials -->
+<div class="testimonials">
+	<div class="container">
+		<h3 class="w3l-title">bình luận của khách hàng</h3>
+		<div class="w3_testimonials_grids">
+			<div class="col-md-4 col-sm-4 item w3_agileits_testimonials_grid">
+				<img src=" {%  static ' /images/g1.jpg' %}" alt=" " class="img-responsive w3-main-img" />
+				<img class="posi-w3l img-responsive" src=" {%  static ' /images/test1.jpg' %}" alt=" " />
+				<div class="text-w3l">
+					<h4>ThuDieu Nguyen</h4>
+					<p>Hôm nay tôi đi ăn ở nhà hàng món này ngon lắm mà không nhớ tên.Không biết fanpage mình có công thức làm món này khôngs</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 item w3_agileits_testimonials_grid">
+				<img src=" {%  static ' /images/g5.jpg' %}" alt=" " class="img-responsive w3-main-img" />
+				<img class="posi-w3l img-responsive" src=" {%  static ' /images/test2.jpg' %}" alt=" " />
+				<div class="text-w3l">
+					<h4>Thu Dieu</h4>
+					<p>làm theo công thức của trang này ngon lắm ạ</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 item w3_agileits_testimonials_grid">
+				<img src=" {%  static ' /images/g4.jpg' %}" alt=" " class="img-responsive w3-main-img" />
+				<img class="posi-w3l img-responsive" src=" {%  static ' /images/test3.jpg' %}" alt=" " />
+				<div class="text-w3l">
+					<h4>Dieu My</h4>
+					<p>Donec quis turpis pellentesque justo pulvinar scelerisque placerat mattis enim.</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- //testimonials -->
+<!-- delicious-food -->
+<div class="delicious_food" id="gallery">
+	<div class="container">
+		<h3 class="w3l-title">Our Delicious Food</h3>
+		<div class="agile_delicious_food_grids">
+			<div class="agile_delicious_food_grid">
+				<a class="sb" href=" {%  static ' /images/g1.jpg' %}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+					<div class="view view-sixth">
+						<img src=" {%  static ' /images/g1.jpg' %}" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Glorious</h4>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="agile_delicious_food_grid">
+				<a class="sb" href=" {%  static ' /images/g2.jpg'%}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+					<div class="view view-sixth">
+						<img src=" {%  static ' /images/g2.jpg'%}" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Glorious</h4>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="agile_delicious_food_grid">
+				<a class="sb" href=" {%  static ' /images/g3.jpg' %}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+					<div class="view view-sixth">
+						<img src=" {%  static ' /images/g3.jpg' %}" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Glorious</h4>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="agile_delicious_food_grid">
+				<a class="sb" href=" {%  static ' /images/g4.jpg' %}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+					<div class="view view-sixth">
+						<img src=" {%  static ' /images/g4.jpg' %}" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Glorious</h4>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="agile_delicious_food_grid">
+				<a class="sb" href=" {%  static ' /images/g5.jpg' %}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+					<div class="view view-sixth">
+						<img src=" {%  static ' /images/g5.jpg' %}" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Glorious</h4>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="agile_delicious_food_grid">
+				<a class="sb" href=" {%  static ' /images/g6.jpg' %}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+					<div class="view view-sixth">
+						<img src=" {%  static ' /images/g6.jpg' %}" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Glorious</h4>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="agile_delicious_food_grid">
+				<a class="sb" href=" {%  static ' /images/g7.jpg' %}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+					<div class="view view-sixth">
+						<img src=" {%  static ' /images/g7.jpg' %}" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Glorious</h4>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="agile_delicious_food_grid">
+				<a class="sb" href=" {%  static ' /images/g8.jpg' %}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+					<div class="view view-sixth">
+						<img src=" {%  static ' /images/g8.jpg' %}" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Glorious</h4>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="agile_delicious_food_grid">
+				<a class="sb" href=" {%  static ' /images/g9.jpg' %}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+					<div class="view view-sixth">
+						<img src=" {%  static ' /images/g9.jpg' %}" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Glorious</h4>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!-- //delicious-food -->
+<!-- footer -->
+<div class="footer" id="contact">
+	<div class="container">
+		<div class="agile-footer-grids">
+			<div class="col-md-3 col-sm-6 col-xs-6 w3-agile-footer-grid">
+				<div class="logo-2">
+					<h2><a href="index.html">Glorious<span>Restaurant</span></a></h2>
+				</div>
+				<ul>
+					<li>Lorem ipsum dolor sit,</li>
+					<li>BD 2 Mars,</li>
+					<li>N° 136</li>
+					<li>Email</li>
+					<li><a href="mailto:info@example.com">info@example.com</a></li>
+					<li>Phone Number</li>
+					<li>+123 456 7890</li>
+				</ul>				
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6 w3-agile-footer-grid">
+				<h3>Opening Days</h3>
+				<div class="col-md-5 col-sm-5 col-xs-5 agile-opening">
+					<ul>
+						<li>Monday </li>
+						<li>Tuesday </li>
+						<li>Wednesday </li>
+						<li>Thursday </li>
+						<li>Friday </li>
+						<li>Saturday </li>
+						<li>Sunday </li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6 agile-opening">
+					<ul>
+						<li>8am-10pm</li>
+						<li>9am-10pm</li>
+						<li>7am-11pm</li>
+						<li>5am-11pm</li>
+						<li>6am-12pm</li>
+						<li>7am-12pm</li>
+						<li>4am-12pm</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-6 w3-agile-footer-grid grid-w3-1">
+				<div class="contact-block-left">
+					<form action="#" method="post">
+						<input type="text" placeholder="Name" name="Name" required="">
+						<input type="email" class="email" placeholder="Email" name="Email" required="">             
+						<textarea placeholder="Message" name="message" required=""></textarea>
+						<input type="submit" value="Send">
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- copyright -->
+	<div class="copyright">
+		
+	</div>
+	<!-- //copyright -->
+</div>
+<!-- //footer -->
+
+<!-- js-scripts -->		
+		
+	<!-- js -->
+	<script type="text/javascript" src=" {%  static ' /js/jquery-2.1.4.min.js' %}"></script>
+	<script type="text/javascript" src=" {%  static ' /js/bootstrap.js' %}"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<!-- //js -->
+	<!-- responsiveslider -->
+	<script src=" {%  static ' /js/responsiveslides.min.js' %}"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+			  // Slideshow 4
+			  $("#slider3").responsiveSlides({
+				auto: true,
+				pager:true,
+				nav:false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+				  $('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+				  $('.events').append("<li>after event fired.</li>");
+				}
+			  });
+		
+			});
+		 </script>
+	<!-- //responsiveslider -->
+	<!-- menu -->
+	<script>
+		$(document).ready(function () {
+		  $('.mobile-nav-button').on('click', function() {
+		  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)" ).toggleClass( "mobile-nav-button__line--1");
+		  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)" ).toggleClass( "mobile-nav-button__line--2");  
+		  $( ".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)" ).toggleClass( "mobile-nav-button__line--3");  
+		  
+		  $('.mobile-menu').toggleClass('mobile-menu--open');
+		  return false;
+		}); 
+		});
+	</script>
+	<!-- //menu -->
+	<!-- flexSlider-for-grids-section -->
+		<script defer src=" {%  static ' /js/jquery.flexslider.js' %}"></script>
+		<script type="text/javascript">
+			$(window).load(function(){
+			  $('.flexslider').flexslider({
+				animation: "slide",
+				start: function(slider){
+				  $('body').removeClass('loading');
+				}
+			  });
+			});
+	  </script>
+	<!-- //flexSlider-for-grids-section -->
+	<!-- flexSlider-for-menu-section -->
+	<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 4,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: { 
+					portrait: { 
+						changePoint:480,
+						visibleItems: 2
+					}, 
+					landscape: { 
+						changePoint:640,
+						visibleItems:3
+					},
+					tablet: { 
+						changePoint:768,
+						visibleItems: 4
+					}
+				}
+			});
+			
+		});
+	</script>
+	<script type="text/javascript" src=" {%  static ' /js/jquery.flexisel.js' %}"></script>
+	<!-- //flexSlider-for-menu-section -->
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src=" {%  static ' /js/move-top.js' %}"></script>
+	<script type="text/javascript" src=" {%  static ' /js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- for-bottom-to-top smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //for-bottom-to-top smooth scrolling -->
+	<!-- Calendar -->
+	<link rel="stylesheet" href=" {%  static ' /css/jquery-ui.css' %}" />
+	<script src=" {%  static ' /js/jquery-ui.js' %}"></script>
+		<script>
+			$(function() {
+			$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+			});
+		</script>
+	<!-- //Calendar -->
+	<!-- video-js -->
+	<script src=" {%  static ' /js/jquery.vide.min.js' %}"></script>
+	<!-- //video-js -->	
+	<!-- smoothbox -->
+	<script type="text/javascript" src=" {%  static ' /js/smoothbox.jquery2.js' %}"></script>
+	<!-- //smoothbox -->
+	<!-- Time -->
+	<script type="text/javascript" src=" {%  static ' /js/wickedpicker.js' %}"></script>
+		<script type="text/javascript">
+			$('.timepicker').wickedpicker({twentyFour: false});
+		</script>
+	<!-- //Time -->
+
+<!-- //js-scripts -->
+</body>
+</html>
+  {% endblock content %}

@@ -1,0 +1,48 @@
+
+{% block content %}
+{% load static %}
+<DOCTYPE html>
+<html lang="en">
+<head>
+<title>Glassy Login Form A Responsive Widget Template :: w3layouts</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Glassy Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link rel="stylesheet" href="{% static '/css/style-starter.css' %}"> <!-- Font-Awesome-Icons-CSS -->
+<link rel="stylesheet" href="{% static  '/css/style1.css' %}" type="text/css" media="all" /> <!-- Style-CSS --> 
+<!-- //css files -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+  <body id="home">
+<section class=" w3l-header-4 header-sticky">
+	<!--header-->
+	<header id="site-header" class="fixed-top">
+		<div  class="container mb-5"
+            <div class = "row justify-content-center mt-5">
+                <div class = "col-md-8 col-sm-12 offset-md-1 p-4 text-center">
+                    <h2 style= "margin-left: 200px">Online food delivery Service</h2>
+                    </div>
+                    </div>
+                <div style ="margin-botton :50px" class = "row justify-content-center mt-5">
+                    <div class = "card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
+                    <h1 style = "color : black ; margin-top : 2px">Place an Oder</h1>
+                    <a href="{% url 'order' %}" class= "btn btn-outline-primary">oder Now!</a>
+                    </div>
+                    </div>
+                    </div>
+	  </header>
+</section>
+    
+
+</body>
+
+</html>
+ {% endblock content %}
